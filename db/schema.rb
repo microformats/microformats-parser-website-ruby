@@ -16,7 +16,6 @@ ActiveRecord::Schema.define(version: 20170516194159) do
   enable_extension "plpgsql"
 
   create_table "submissions", force: :cascade do |t|
-    t.text "url"
     t.text "html"
     t.text "base_url"
     t.boolean "save_html"
