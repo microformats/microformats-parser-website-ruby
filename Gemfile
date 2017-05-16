@@ -10,6 +10,9 @@ gem "pg"
 # webserver
 gem "puma"
 
+# webserver
+gem "microformats2"
+
 # assets
 gem "bootstrap-sass", "3.3.7"
 gem "sass-rails"
