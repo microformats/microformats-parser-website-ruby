@@ -8,11 +8,6 @@ class SubmissionsController < ApplicationController
 
   # GET /submissions/1
   def show
-    doc = Microformats2.parse(@submission.url)
-
-    if @submission.url.present?
-      return render json: JSON.pretty_generate(doc.to_h)
-    end
   end
 
   # GET /submissions/new

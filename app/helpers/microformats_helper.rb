@@ -1,0 +1,2 @@
+module MicroformatsHelper
+end

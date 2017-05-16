@@ -1,19 +1,17 @@
-<%= form_with(url: "microformats", method: "get") do |form| %>
+<%= form_with url: "/microformats", method: "get", local: true do |form| %>
   <div class="form-group">
     <%= form.label :url, "URL" %>
-    <%= form.text_field :url, id: :submission_url, class: "form-control form-control-xl" %>
+    <%= form.text_field :url, id: :submission_url, placeholder: "https://example.com/person.html", class: "form-control form-control-xl" %>
   </div>
 
   <div class="actions">
-    <%= form.submit "Parse", class: "btn btn-xl btn-success" %>
+    <button type="submit" class="btn btn-xl btn-success">Parse</button>
   </div>
 <% end %>
 
+<h2 class="h4 my-5">OR parse just a snippet of HTML</h2>
 
-  <h2 class="h4 my-5">OR parse just a snippet of HTML</h2>
-
-
-<%= form_with(model: @submission, local: true) do |form| %>
+<%= form_with model: @submission, local: true do |form| %>
   <% if @submission.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@submission.errors.count, "error") %> prohibited this submission from being saved:</h2>
@@ -25,6 +23,7 @@
       </ul>
     </div>
   <% end %>
+
   <div class="form-group">
     <%= form.label :html, "HTML" %>
     <%= form.text_area :html, id: :submission_html, class: "form-control form-control-xl", rows: 6 %>
