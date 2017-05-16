@@ -24,10 +24,19 @@ class SubmissionsController < ApplicationController
   def create
     @submission = Submission.new(submission_params)
 
-    if @submission.save
-      redirect_to @submission, notice: 'Submission was successfully created.'
+    doc  = Microformats2.parse(@submission.html, base: @submission.base_url)
+    json = JSON.pretty_generate(doc.to_h)
+
+    @submission.json = json
+
+    if @submission.save_html?
+      if @submission.save
+        redirect_to @submission, notice: "Submission was successfully created."
+      else
+        render :new
+      end
     else
-      render :new
+      render :show
     end
   end
 

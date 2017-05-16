@@ -1,29 +1,13 @@
-<p id="notice"><%= notice %></p>
+<%= render "form", submission: @submission %>
 
-<p>
-  <strong>Url:</strong>
-  <%= @submission.url %>
-</p>
+<% if @submission.render_html_in_page? %>
+<div class="card mb-5">
+  <div class="card-header">
+    Rendered HTML
+  </div>
 
-<p>
-  <strong>Html:</strong>
-  <%= @submission.html %>
-</p>
-
-<p>
-  <strong>Base url:</strong>
-  <%= @submission.base_url %>
-</p>
-
-<p>
-  <strong>Save html:</strong>
-  <%= @submission.save_html %>
-</p>
-
-<p>
-  <strong>Render html in page:</strong>
-  <%= @submission.render_html_in_page %>
-</p>
-
-<%= link_to 'Edit', edit_submission_path(@submission) %> |
-<%= link_to 'Back', submissions_path %>
+  <div class="card-block">
+    <%= simple_format @submission.html %>
+  </div>
+</div>
+<% end %>

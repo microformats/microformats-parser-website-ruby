@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 20170516194159) do
   create_table "submissions", force: :cascade do |t|
     t.text "html"
     t.text "base_url"
+    t.text "json"
     t.boolean "save_html"
     t.boolean "render_html_in_page"
     t.datetime "created_at", null: false

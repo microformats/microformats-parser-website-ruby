@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MicroformatsParserWebsite</title>
+    <title>Microformats Parser</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    "application", media: "all" %>
@@ -10,7 +10,15 @@
 
   <body>
     <div class="container">
-      <h1 class="mt-5 mb-3">Microformats Parser</h1>
+      <% if notice.present? %>
+        <div class="alert alert-info mt-5" role="alert">
+          <%= notice %>
+        </div>
+      <% end %>
+
+      <h1 class="mt-5 mb-3">
+        <%= link_to_unless_current "Microformats Parser", root_path %>
+      </h1>
       <%= yield %>
     </div>
   </body>
