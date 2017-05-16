@@ -1,6 +1,6 @@
 <%= form_with url: "/microformats", method: "get", local: true do |form| %>
   <div class="form-group">
-    <%= form.label :url, "URL" %>
+    <%= form.label :url, "Enter a URL" %>
     <%= form.text_field :url, id: :submission_url, placeholder: "https://example.com/person.html", class: "form-control form-control-xl" %>
   </div>
 
@@ -9,7 +9,9 @@
   </div>
 <% end %>
 
+
 <h2 class="h4 my-5">OR parse just a snippet of HTML</h2>
+
 
 <%= form_with model: @submission, local: true do |form| %>
   <% if @submission.errors.any? %>
