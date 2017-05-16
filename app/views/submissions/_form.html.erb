@@ -13,18 +13,18 @@
 
   <div class="form-group">
     <%= form.label :html, "HTML" %>
-    <%= form.text_area :html, id: :submission_html, class: "form-control form-control-xl", rows: 6, disabled: submission.id.present? %>
+    <%= form.text_area :html, id: :submission_html, class: "form-control form-control-lg", rows: 6, disabled: submission.id.present? %>
   </div>
 
   <div class="form-group">
     <%= form.label :base_url, "Base URL" %>
-    <%= form.text_field :base_url, id: :submission_base_url, class: "form-control form-control-xl", disabled: submission.id.present? %>
+    <%= form.text_field :base_url, id: :submission_base_url, class: "form-control form-control-lg", disabled: submission.id.present? %>
   </div>
 
   <% if submission.id.present? %>
     <div class="form-group">
       <%= form.label :json, "JSON" %>
-      <%= form.text_area :json, id: :submission_json, class: "form-control form-control-xl", rows: 10, disabled: submission.id.present? %>
+      <%= form.text_area :json, id: :submission_json, class: "form-control form-control-lg", rows: 10, disabled: submission.id.present? %>
     </div>
   <% end %>
 
@@ -48,7 +48,7 @@
     </div>
 
     <div class="actions">
-      <%= form.submit "Parse", class: "btn btn-xl btn-success" %>
+      <%= form.submit "Parse", class: "btn btn-lg btn-success" %>
     </div>
   <% end %>
 
