@@ -1,6 +1,19 @@
 @import "bootstrap";
 @import "tether";
 
-form label {
-  font-weight: bold;
+form {
+  label {
+    font-weight: bold;
+  }
+
+  textarea,
+  input[type=text] {
+    font-family:  "SF Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .form-control:disabled {
+    cursor: default;
+    background: #efefef;
+    color: black;
+  }
 }
