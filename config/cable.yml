@@ -7,4 +7,4 @@ test:
 production:
   adapter: redis
   url: redis://localhost:6379/1
-  channel_prefix: microformats-parser-website_production
+  channel_prefix: microformats-ruby-parser_production

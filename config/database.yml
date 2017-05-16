@@ -5,14 +5,14 @@ default: &default
 
 development:
   <<: *default
-  database: microformats_parser_website_development
+  database: microformats_ruby_parser_development
 
 test:
   <<: *default
-  database: microformats_parser_website_test
+  database: microformats_ruby_parser_test
 
 production:
   <<: *default
-  database: microformats_parser_website_production
-  username: microformats_parser_website
-  password: <%= ENV['MICROFORMATS_PARSER_WEBSITE_DATABASE_PASSWORD'] %>
+  database: microformats_ruby_parser_production
+  username: microformats_ruby_parser
+  password: <%= ENV['MICROFORMATS_PARSER_DATABASE_PASSWORD'] %>
