@@ -24,7 +24,7 @@ class SubmissionsController < ApplicationController
   def create
     @submission = Submission.new(submission_params)
 
-    doc  = Microformats2.parse(@submission.html, base: @submission.base_url)
+    doc  = Microformats.parse(@submission.html, base: @submission.base_url)
     json = JSON.pretty_generate(doc.to_h)
 
     @submission.json = json
