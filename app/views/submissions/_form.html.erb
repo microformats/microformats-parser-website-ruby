@@ -21,7 +21,7 @@
     <%= form.text_field :base_url, id: :submission_base_url, class: "form-control form-control-lg", disabled: submission.id.present? %>
   </div>
 
-  <% if submission.id.present? %>
+  <% unless action_name == "new" %>
     <div class="form-group">
       <%= form.label :json, "JSON" %>
       <%= form.text_area :json, id: :submission_json, class: "form-control form-control-lg", rows: 10, disabled: submission.id.present? %>
