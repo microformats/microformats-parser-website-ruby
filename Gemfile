@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-ruby "2.4.0"
+ruby "2.4.1"
 
 # app server
 gem "rails", "~> 5.1.0"
@@ -11,7 +11,7 @@ gem "pg"
 gem "puma"
 
 # webserver
-gem "microformats"
+gem "microformats", "~> 4.0.3"
 
 # assets
 gem "bootstrap", "~> 4.0.0.alpha6"
