@@ -2,7 +2,7 @@ class MicroformatsController < ApplicationController
   def show
 
     if params[:url].present?
-      doc = Microformats.parse(params[:url])
+      doc = Microformats.parse(params[:url].strip)
       return render json: JSON.pretty_generate(doc.to_h)
     else
       return redirect_to new_submissions_path
