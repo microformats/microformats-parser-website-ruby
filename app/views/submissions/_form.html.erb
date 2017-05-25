@@ -18,7 +18,7 @@
 
   <div class="form-group">
     <%= form.label :base_url, "Base URL" %>
-    <%= form.text_field :base_url, id: :submission_base_url, class: "form-control form-control-lg", disabled: submission.id.present? %>
+    <%= form.url_field :base_url, id: :submission_base_url, class: "form-control form-control-lg", disabled: submission.id.present? %>
   </div>
 
   <% unless action_name == "new" %>

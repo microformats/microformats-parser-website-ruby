@@ -1,7 +1,7 @@
 <%= form_with url: "/microformats", method: "get", local: true do |form| %>
   <div class="form-group">
     <%= form.label :url, "Enter a URL" %>
-    <%= form.text_field :url, id: :submission_url, placeholder: "https://example.com/person.html", class: "form-control form-control-lg" %>
+    <%= form.url_field :url, id: :submission_url, placeholder: "https://example.com/person.html", class: "form-control form-control-lg" %>
   </div>
 
   <div class="actions">
