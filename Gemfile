@@ -14,7 +14,7 @@ gem "puma"
 gem "microformats", "~> 4.0.3"
 
 # assets
-gem "bootstrap", "~> 4.0.0.alpha6"
+gem "bootstrap", "~> 4.1.0"
 gem "sass-rails"
 gem "autoprefixer-rails"
 gem "uglifier"
