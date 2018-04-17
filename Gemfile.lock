@@ -40,12 +40,13 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     arel (8.0.0)
-    autoprefixer-rails (7.1.1)
+    autoprefixer-rails (8.3.0)
       execjs
     bindex (0.5.0)
-    bootstrap (4.0.0.alpha6)
+    bootstrap (4.1.0)
       autoprefixer-rails (>= 6.0.3)
-      sass (>= 3.4.19)
+      popper_js (>= 1.12.9, < 2)
+      sass (>= 3.5.2)
     builder (3.2.3)
     byebug (9.0.6)
     coderay (1.1.1)
@@ -111,6 +112,7 @@ GEM
       nenv (~> 0.1)
       shellany (~> 0.0)
     pg (0.20.0)
+    popper_js (1.12.9)
     pry (0.10.4)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -174,7 +176,11 @@ GEM
       rspec-mocks (~> 3.6.0)
       rspec-support (~> 3.6.0)
     rspec-support (3.6.0)
-    sass (3.4.24)
+    sass (3.5.6)
+      sass-listen (~> 4.0.0)
+    sass-listen (4.0.0)
+      rb-fsevent (~> 0.9, >= 0.9.4)
+      rb-inotify (~> 0.9, >= 0.9.7)
     sass-rails (5.0.6)
       railties (>= 4.0.0, < 6)
       sass (~> 3.1)
@@ -224,7 +230,7 @@ PLATFORMS
 
 DEPENDENCIES
   autoprefixer-rails
-  bootstrap (~> 4.0.0.alpha6)
+  bootstrap (~> 4.1.0)
   byebug
   factory_girl_rails
   fast_stack
