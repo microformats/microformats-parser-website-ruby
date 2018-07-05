@@ -34,7 +34,7 @@ group :development, :test do
   gem "guard-rspec"
   gem "spring-commands-rspec"
   gem "simplecov", :require => false
-  gem "factory_girl_rails"
+  gem "factory_bot_rails"
 end
 
 # dev

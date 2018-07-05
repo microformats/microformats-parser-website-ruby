@@ -1,4 +1,4 @@
-FactoryGirl.define do
+FactoryBot.define do
   factory :submission do
     url "MyText"
     html "MyText"
