@@ -11,7 +11,7 @@ gem "pg"
 gem "puma"
 
 # webserver
-gem "microformats", "~> 4.0.3"
+gem "microformats", "~> 4.0.7"
 
 # assets
 gem "bootstrap", "~> 4.0.0.alpha6"
