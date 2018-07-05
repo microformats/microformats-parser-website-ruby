@@ -61,7 +61,7 @@ GEM
       factory_girl (~> 4.8.0)
       railties (>= 3.0.0)
     fast_stack (0.2.0)
-    ffi (1.9.18)
+    ffi (1.9.25)
     flamegraph (0.9.5)
     formatador (0.2.5)
     globalid (0.4.0)
@@ -87,9 +87,10 @@ GEM
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
     json (2.1.0)
-    listen (3.0.8)
+    listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
+      ruby_dep (~> 1.2)
     loofah (2.2.2)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -153,9 +154,9 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rake (12.3.1)
-    rb-fsevent (0.9.8)
-    rb-inotify (0.9.8)
-      ffi (>= 0.5.0)
+    rb-fsevent (0.10.3)
+    rb-inotify (0.9.10)
+      ffi (>= 0.5.0, < 2)
     rspec (3.6.0)
       rspec-core (~> 3.6.0)
       rspec-expectations (~> 3.6.0)
@@ -177,6 +178,7 @@ GEM
       rspec-mocks (~> 3.6.0)
       rspec-support (~> 3.6.0)
     rspec-support (3.6.0)
+    ruby_dep (1.5.0)
     sass (3.5.6)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -238,7 +240,7 @@ DEPENDENCIES
   flamegraph
   guard-rspec
   jquery-rails
-  listen (~> 3.0.5)
+  listen (~> 3.1.5)
   memory_profiler
   microformats (~> 4.0.7)
   nokogiri
