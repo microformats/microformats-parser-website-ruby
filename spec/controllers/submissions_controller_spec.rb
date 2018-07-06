@@ -42,7 +42,7 @@ RSpec.describe SubmissionsController, type: :controller do
 
   describe 'GET #index' do
     it 'returns a success response' do
-      submission = Submission.create! valid_attributes
+      Submission.create! valid_attributes
       get :index, params: {}, session: valid_session
       expect(response).to be_success
     end
