@@ -1,24 +1,24 @@
-source "https://rubygems.org"
-ruby "2.5.1"
+source 'https://rubygems.org'
+ruby '2.5.1'
 
 # app server
-gem "rails", "~> 5.2.0"
+gem 'rails', '~> 5.2.0'
 
 # database
-gem "pg"
+gem 'pg'
 
 # webserver
-gem "puma"
+gem 'puma'
 
 # webserver
-gem "microformats", "~> 4.0.7"
+gem 'microformats', '~> 4.0.7'
 
 # assets
-gem "bootstrap"
-gem "sass-rails"
-gem "autoprefixer-rails"
-gem "uglifier"
-gem "jquery-rails"
+gem 'autoprefixer-rails'
+gem 'bootstrap'
+gem 'jquery-rails'
+gem 'sass-rails'
+gem 'uglifier'
 
 # For codestyle guide and linting
 gem 'rubocop', require: false
@@ -26,34 +26,34 @@ gem 'rubocop-rspec'
 
 # dev and testing
 group :development, :test do
-  gem "byebug", platform: :mri
-  gem "nokogiri"
-  gem "rspec-rails"
-  gem "rails-controller-testing"
-  gem "guard-rspec"
-  gem "spring-commands-rspec"
-  gem "simplecov", :require => false
-  gem "factory_bot_rails"
+  gem 'byebug', platform: :mri
+  gem 'factory_bot_rails'
+  gem 'guard-rspec'
+  gem 'nokogiri'
+  gem 'rails-controller-testing'
+  gem 'rspec-rails'
+  gem 'simplecov', require: false
+  gem 'spring-commands-rspec'
 end
 
 # dev
 group :development do
-  gem "web-console"
-  gem "listen", "~> 3.1.5"
-  gem "spring"
-  gem "spring-watcher-listen", "~> 2.0.0"
+  gem 'listen', '~> 3.1.5'
+  gem 'spring'
+  gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'web-console'
 
   # For measuring page/code performance
-  gem "rack-mini-profiler"
+  gem 'rack-mini-profiler'
 
   # For memory profiling
-  gem "memory_profiler"
+  gem 'memory_profiler'
 
   # For call-stack profiling flamegraphs
-  gem "flamegraph"
-  gem "stackprof"
-  gem "fast_stack"
+  gem 'fast_stack'
+  gem 'flamegraph'
+  gem 'stackprof'
 end
 
 # windows dev
-gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

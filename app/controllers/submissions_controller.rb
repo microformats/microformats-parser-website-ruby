@@ -7,8 +7,7 @@ class SubmissionsController < ApplicationController
   end
 
   # GET /submissions/1
-  def show
-  end
+  def show; end
 
   # GET /submissions/new
   def new
@@ -31,7 +30,7 @@ class SubmissionsController < ApplicationController
 
     if @submission.save_html?
       if @submission.save
-        redirect_to @submission, notice: "Submission was successfully created."
+        redirect_to @submission, notice: 'Submission was successfully created.'
       else
         render :new
       end
