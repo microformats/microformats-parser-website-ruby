@@ -76,17 +76,6 @@ If you find bugs, have feature requests or questions, please
 [file an issue](https://github.com/indieweb/microformats-ruby/issues).
 
 
-## Testing
-
-### Specs
-
-This uses a copy of  [microformats tests repo](https://github.com/microformats/tests).
-
-To run specs
-```
-rake
-```
-
 ## License
 
 Microformats Ruby Parser Website is dedicated to the public domain using Creative Commons -- CC0 1.0 Universal.
