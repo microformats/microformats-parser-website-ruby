@@ -1,7 +1,11 @@
 # Microformats Ruby Parser Website
 
 Website for Microformats Ruby parser (based on pin13.net by @aaronpk).
-https://microformats-ruby-parser.heroku.com
+https://ruby.microformats.io
+
+## Deployment
+
+All commits to the `master` branch get auto-deployed to the live website (running on [Heroku](https://ruby.microformats.io))
 
 ## Development Status
 
