@@ -1,6 +1,7 @@
 # Microformats Ruby Parser Website
 
-Website for Microformats Ruby parser (based on pin13.net by @aaronpk).
+Website for Microformats Ruby parser (based on pin13.net by [@aaronpk](https://github.com/aaronpk)).
+
 https://ruby.microformats.io
 
 ## Deployment
