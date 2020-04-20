@@ -197,6 +197,10 @@ GEM
       rexml
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 2.0)
+    rubocop-rails (2.5.2)
+      activesupport
+      rack (>= 1.1)
+      rubocop (>= 0.72.0)
     rubocop-rspec (1.38.1)
       rubocop (>= 0.68.1)
     ruby-progressbar (1.10.1)
@@ -270,6 +274,7 @@ DEPENDENCIES
   rails-controller-testing (~> 1.0)
   rspec-rails (~> 3.9)
   rubocop (~> 0.82.0)
+  rubocop-rails (~> 2.5)
   rubocop-rspec (~> 1.38)
   sass-rails (= 5.0.7)
   simplecov (~> 0.18.5)

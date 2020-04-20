@@ -23,7 +23,8 @@ gem 'uglifier', '4.1.17'
 
 # For codestyle guide and linting
 gem 'rubocop', '~> 0.82.0', require: false
-gem 'rubocop-rspec', '~> 1.38'
+gem 'rubocop-rails', '~> 2.5', require: false
+gem 'rubocop-rspec', '~> 1.38', require: false
 
 # dev and testing
 group :development, :test do
