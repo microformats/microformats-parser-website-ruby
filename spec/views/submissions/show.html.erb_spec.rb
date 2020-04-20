@@ -12,12 +12,12 @@ RSpec.describe 'submissions/show', type: :view do
 
   it 'renders attributes in <p>' do
     render
-    
-    assert_select 'form[action=?][method=?]', submission_path(@submission.id), 'post' do
+
+    assert_select 'form[action=?][method=?]', submission_path(submission.id), 'post' do
       assert_select 'textarea[name=?]', 'submission[html]'
-      
+
       assert_select 'input[name=?][value=?]', 'submission[base_url]', 'MyText'
-      
+
       assert_select 'textarea[name=?]', 'submission[json]'
     end
   end
