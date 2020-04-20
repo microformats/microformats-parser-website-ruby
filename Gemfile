@@ -3,23 +3,23 @@ ruby '2.5.1'
 source 'https://rubygems.org'
 
 # app server
-gem 'rails', '5.2.0'
+gem 'rails', '~> 5.2'
 
 # database
-gem 'pg', '1.0.0'
+gem 'pg', '~> 1.2'
 
 # webserver
-gem 'puma', '3.12.0'
+gem 'puma', '~> 3.12'
 
 # webserver
-gem 'microformats', '4.0.7'
+gem 'microformats', '~> 4.2'
 
 # assets
-gem 'autoprefixer-rails', '9.1.0'
-gem 'bootstrap', '4.1.3'
-gem 'jquery-rails', '4.3.3'
-gem 'sass-rails', '5.0.7'
-gem 'uglifier', '4.1.17'
+gem 'autoprefixer-rails', '~> 9.7'
+gem 'bootstrap', '~> 4.4'
+gem 'jquery-rails', '~> 4.3'
+gem 'sass-rails', '~> 5.1'
+gem 'uglifier', '~> 4.2'
 
 # For codestyle guide and linting
 gem 'rubocop', '~> 0.82.0', require: false
