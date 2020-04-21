@@ -4,7 +4,7 @@ RSpec.describe 'Submissions', type: :request do
   describe 'GET /submissions' do
     it 'works! (now write some real specs)' do
       get submissions_path
-      expect(response).to have_http_status(:ok)
+      expect(response).to have_http_status(:redirect)
     end
   end
 end

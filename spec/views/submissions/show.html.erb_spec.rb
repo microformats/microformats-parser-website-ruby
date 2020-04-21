@@ -3,7 +3,6 @@ require 'rails_helper'
 RSpec.describe 'submissions/show', type: :view do
   before do
     @submission = assign(:submission, Submission.create!(
-                                        url: 'MyText',
                                         html: 'MyText',
                                         base_url: 'MyText',
                                         save_html: false,
@@ -13,10 +12,13 @@ RSpec.describe 'submissions/show', type: :view do
 
   it 'renders attributes in <p>' do
     render
-    expect(rendered).to match(/MyText/)
-    expect(rendered).to match(/MyText/)
-    expect(rendered).to match(/MyText/)
-    expect(rendered).to match(/false/)
-    expect(rendered).to match(/false/)
+
+    assert_select 'form[action=?][method=?]', submission_path(@submission.id), 'post' do
+      assert_select 'textarea[name=?]', 'submission[html]'
+
+      assert_select 'input[name=?][value=?]', 'submission[base_url]', 'MyText'
+
+      assert_select 'textarea[name=?]', 'submission[json]'
+    end
   end
 end
