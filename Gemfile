@@ -1,59 +1,61 @@
-source 'https://rubygems.org'
 ruby '2.5.1'
 
+source 'https://rubygems.org'
+
 # app server
-gem 'rails', '~> 5.2.0'
+gem 'rails', '~> 5.2'
 
 # database
-gem 'pg'
+gem 'pg', '~> 1.2'
 
 # webserver
-gem 'puma'
+gem 'puma', '~> 3.12'
 
 # webserver
-gem 'microformats', '~> 4.0.7'
+gem 'microformats', '~> 4.2'
 
 # assets
-gem 'autoprefixer-rails'
-gem 'bootstrap'
-gem 'jquery-rails'
-gem 'sass-rails'
-gem 'uglifier'
+gem 'autoprefixer-rails', '~> 9.7'
+gem 'bootstrap', '~> 4.4'
+gem 'jquery-rails', '~> 4.3'
+gem 'sass-rails', '~> 5.1'
+gem 'uglifier', '~> 4.2'
 
 # For codestyle guide and linting
-gem 'rubocop', require: false
-gem 'rubocop-rspec'
+gem 'rubocop', '~> 0.82.0', require: false
+gem 'rubocop-rails', '~> 2.5', require: false
+gem 'rubocop-rspec', '~> 1.38', require: false
 
 # dev and testing
 group :development, :test do
-  gem 'byebug', platform: :mri
-  gem 'factory_bot_rails'
-  gem 'guard-rspec'
-  gem 'nokogiri'
-  gem 'rails-controller-testing'
-  gem 'rspec-rails'
-  gem 'simplecov', require: false
-  gem 'spring-commands-rspec'
+  gem 'byebug', '~> 10.0', platform: :mri
+  gem 'factory_bot_rails', '~> 5.1'
+  gem 'guard-rspec', '~> 4.7'
+  gem 'nokogiri', '~> 1.10'
+  gem 'rails-controller-testing', '~> 1.0'
+  gem 'rspec-rails', '~> 4.0'
+  gem 'simplecov', '~> 0.18.5', require: false
+  gem 'spring-commands-rspec', '~> 1.0'
 end
 
 # dev
 group :development do
-  gem 'listen', '~> 3.1.5'
-  gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
-  gem 'web-console'
+  gem 'listen', '~> 3.2'
+  gem 'spring', '~> 2.1'
+  gem 'spring-watcher-listen', '~> 2.0'
+  gem 'web-console', '~> 3.7'
 
   # For measuring page/code performance
-  gem 'rack-mini-profiler'
+  gem 'rack-mini-profiler', '~> 2.0'
 
   # For memory profiling
-  gem 'memory_profiler'
+  gem 'memory_profiler', '~> 0.9.14'
 
   # For call-stack profiling flamegraphs
-  gem 'fast_stack'
-  gem 'flamegraph'
-  gem 'stackprof'
+  gem 'fast_stack', '~> 0.2.0'
+  gem 'flamegraph', '~> 0.9.5'
+  gem 'stackprof', '~> 0.2.15'
 end
 
 # windows dev
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'tzinfo-data', '~> 1.2019', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

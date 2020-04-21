@@ -1,4 +1,6 @@
-require: rubocop-rspec
+require: 
+  - rubocop-rails
+  - rubocop-rspec
 
 AllCops:
   TargetRubyVersion: 2.5
@@ -15,16 +17,13 @@ AllCops:
     - '.git/**/*'
 
 IndentationConsistency:
-  EnforcedStyle: 'rails'
+  EnforcedStyle: 'indented_internal_methods'
 
 Naming/FileName:
   Exclude:
     - 'Gemfile'
     - 'Guardfile'
     - 'Rakefile'
-
-Rails:
-  Enabled: true
 
 Metrics/CyclomaticComplexity:
   Max: 15
