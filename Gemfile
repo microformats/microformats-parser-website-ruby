@@ -29,11 +29,11 @@ gem 'rubocop-rspec', '~> 1.38', require: false
 # dev and testing
 group :development, :test do
   gem 'byebug', '~> 10.0', platform: :mri
-  gem 'factory_bot_rails', '~> 4.11'
+  gem 'factory_bot_rails', '~> 5.1'
   gem 'guard-rspec', '~> 4.7'
   gem 'nokogiri', '~> 1.10'
   gem 'rails-controller-testing', '~> 1.0'
-  gem 'rspec-rails', '~> 3.9'
+  gem 'rspec-rails', '~> 4.0'
   gem 'simplecov', '~> 0.18.5', require: false
   gem 'spring-commands-rspec', '~> 1.0'
 end
@@ -46,7 +46,7 @@ group :development do
   gem 'web-console', '~> 3.7'
 
   # For measuring page/code performance
-  gem 'rack-mini-profiler', '~> 1.1'
+  gem 'rack-mini-profiler', '~> 2.0'
 
   # For memory profiling
   gem 'memory_profiler', '~> 0.9.14'
